@@ -1,0 +1,151 @@
+/* General styles for the chatbot popup */
+.chatbot-popup {
+  width: 330px;
+  height: 450px;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles for the header of the chatbot */
+.chatbot-header {
+  background-color: #4caf50;
+  color: white;
+  padding: 0 10px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for the close (X) button */
+.close-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Styles for the content area of the chatbot */
+.chatbot-content {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Bot message styling */
+.bot {
+  background-color: #e0e0e0;
+  align-self: flex-start;
+  max-width: 90%;
+}
+
+/* User message styling */
+.user {
+  background-color: #4caf50;
+  color: white;
+  align-self: flex-end;
+  max-width: 95%;
+}
+.error {
+  background-color: #fc4444;
+  align-self: flex-start;
+  max-width: 90%;
+  color: #fff;
+}
+/* Arrows for the bot messages */
+.bot::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #e0e0e0;
+}
+
+/* Arrows for the user messages */
+.user::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #4caf50;
+}
+
+/* Styles for the input area of the chatbot */
+.chatbot-input {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 2px 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.chatbot-input button {
+  padding: 8px 15px;
+  margin-left: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loading-indicator {
+  font-style: italic;
+  color: #000000;
+  animation: loadingAnimation 1s infinite;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 480px) {
+  .chatbot-popup {
+    width: 300px;
+    height: 450px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+  }
+}
+button::disabled {
+  cursor: not-allowed;
+}
+input::disabled {
+  cursor: not-allowed;
+}

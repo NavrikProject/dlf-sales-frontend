@@ -1,0 +1,102 @@
+.navbar {
+  background-color: #333333;
+  padding: 16px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 4px;
+  transition: all 0.5 ease-in-out;
+}
+
+/* learn about media quary by sawan code */
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 20px 20px;
+  }
+  .botIconDiv img {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+  }
+  .navbar a {
+    display: none;
+  }
+}
+
+.logo {
+  text-align: center;
+  color: #fff;
+  width: 100px;
+  z-index: 100;
+  cursor: pointer;
+}
+.homeBg img {
+  height: 89.1vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.botIconDiv img {
+  position: absolute;
+  bottom: 60px;
+  right: 40px;
+  width: 80px;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.shake {
+  animation: shake 0.5s; /* duration of shake */
+  animation-iteration-count: 5sec; /* number of times to repeat */
+}
