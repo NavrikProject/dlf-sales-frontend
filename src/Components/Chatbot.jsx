@@ -36,7 +36,7 @@ const Chatbot = ({ closeChatbotPopup }) => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/process_message",
+        "https://dlfsalesbackend.azurewebsites.net/process_message",
         {
           message: userMessage,
         },
