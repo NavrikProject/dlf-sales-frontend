@@ -13,7 +13,10 @@
   overflow: hidden;
   font-family: Arial, sans-serif;
 }
-
+.chatIconImage {
+  width: 20%;
+  margin-right: 5px;
+}
 /* Styles for the header of the chatbot */
 .chatbot-header {
   background-color: #4caf50;

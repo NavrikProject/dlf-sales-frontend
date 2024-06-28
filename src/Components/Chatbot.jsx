@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import "./Chatbot.css";
-
+import ChatbotIcon from "../assets/chatbot.png";
 const Chatbot = ({ closeChatbotPopup }) => {
   const chatbotContentRef = useRef(null);
   const [loading, setLoading] = useState(false);
@@ -78,7 +78,16 @@ const Chatbot = ({ closeChatbotPopup }) => {
   return (
     <div className="chatbot-popup">
       <div className="chatbot-header">
-        <span>Sales Chatbot</span>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <img className="chatIconImage" src={ChatbotIcon} alt="" />
+          <span>Sales Chatbot</span>
+        </div>
+
         <button className="close-btn" onClick={closeChatbotPopup}>
           &times;
         </button>
