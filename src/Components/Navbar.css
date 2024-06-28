@@ -102,14 +102,16 @@
 }
 .footer-center {
   position: relative;
-  font-size: 18px;
+  font-size: 19px;
+  color: #fff;
+  font-weight: 500;
 }
 .footer-content {
   position: absolute;
   bottom: 20px;
-  margin: 0 450px 0 500px;
+  margin: 0 400px 0 430px;
 }
 .footer-content a {
   margin-left: 5px;
-  text-decoration: none;
+  /* text-decoration: none; */
 }

@@ -49,7 +49,7 @@ const Navbar = () => {
             <a href="https://www.navriksoftware.com/">
               Navrik Software Solutions
             </a>
-            . All Rights Reserved.
+            . All Rights Reserved.&copy;2024
           </div>
         </div>
       </footer>
