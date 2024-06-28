@@ -27,7 +27,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <main>
+      <div>
         <div className="homeBg">
           <img src={HomeBg} alt="" />
         </div>
@@ -41,7 +41,18 @@ const Navbar = () => {
           />
         </div>
         {isOpen && <Chatbot closeChatbotPopup={closeChatbotPopup} />}
-      </main>
+      </div>
+      <footer>
+        <div className="footer-center">
+          <div className="footer-content">
+            This site is developed by
+            <a href="https://www.navriksoftware.com/">
+              Navrik Software Solutions
+            </a>
+            . All Rights Reserved.
+          </div>
+        </div>
+      </footer>
     </>
   );
 };

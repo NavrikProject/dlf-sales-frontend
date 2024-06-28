@@ -100,3 +100,16 @@
   animation: shake 0.5s; /* duration of shake */
   animation-iteration-count: 5sec; /* number of times to repeat */
 }
+.footer-center {
+  position: relative;
+  font-size: 18px;
+}
+.footer-content {
+  position: absolute;
+  bottom: 20px;
+  margin: 0 450px 0 500px;
+}
+.footer-content a {
+  margin-left: 5px;
+  text-decoration: none;
+}
